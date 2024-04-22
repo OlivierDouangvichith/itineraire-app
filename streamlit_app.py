@@ -26,6 +26,6 @@ selected_value = st_combobox(
 selected_value2 = st_combobox(
     search_wikipedia,
     label="Titre 2",
-    key="wiki_combobox",
+    key="wiki_combobox2",
 )
 
