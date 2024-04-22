@@ -2,15 +2,14 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
-
+from typing import List, Tuple
+from st_combobox import st_combobox
 import wikipedia
 
 """
 # Welcome to the Project Itinerary !
 """
 
-
-from st_combobox import st_combobox
 
 # function with list of labels
 def search_wikipedia(searchterm: str) -> List[any]:
