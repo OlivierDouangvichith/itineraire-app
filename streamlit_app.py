@@ -18,14 +18,14 @@ def search_wikipedia(searchterm: str) -> List[any]:
 # pass search function to combobox
 selected_value = st_combobox(
     search_wikipedia,
-    label="Titre 1"
+    label="Titre 1",
     key="wiki_combobox",
 )
 
 # pass search function to combobox
 selected_value2 = st_combobox(
     search_wikipedia,
-    label="Titre 2"
+    label="Titre 2",
     key="wiki_combobox",
 )
 
