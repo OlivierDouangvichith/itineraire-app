@@ -2,3 +2,4 @@ altair
 pandas
 streamlit
 wikipedia
+st_combobox
