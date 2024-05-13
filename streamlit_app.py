@@ -1,3 +1,7 @@
+# Core Pkgs
+import streamlit as st
+st.set_page_config(page_title="Itinerary Web App", page_icon="👍", layout="centered", initial_sidebar_state="auto")
+
 import altair as alt
 import numpy as np
 import pandas as pd
@@ -9,7 +13,6 @@ import wikipedia
 """
 # Welcome to the Project Itinerary !
 """
-
 
 # function with list of labels
 def search_wikipedia(searchterm: str) -> List[any]:
