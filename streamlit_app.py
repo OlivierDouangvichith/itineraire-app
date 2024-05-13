@@ -32,41 +32,21 @@ def main():
 
   st.sidebar.image("france_tourisme.jpg", use_column_width=True)
 
-  activity = ["Text Analysis", "Translation", "Sentiment Analysis", "About"]
+  activity = ["Menu 1", "Menu 2", "Menu 3", "About"]
   choice = st.sidebar.selectbox("Menu", activity)
 
-  if choice == "Text Analysis":
-      st.subheader("Text Analysis")
+  if choice == "Menu 1":
+      st.subheader("Menu 1")
       st.write("")
 
-      st.markdown("""
-      ### Itinerary Web App made with Streamlit
 
-      for info:
-      - [streamlit](https://streamlit.io)
-      """)
-
-  if choice == "Translation":
-      st.subheader("Translation")
+  if choice == "Menu 2":
+      st.subheader("Menu 2")
       st.write("")
 
-      st.markdown("""
-      ### Itinerary Web App made with Streamlit
-
-      for info:
-      - [streamlit](https://streamlit.io)
-      """)
-
-  if choice == "Sentiment Analysis":
-      st.subheader("Sentiment Analysis")
+  if choice == "Menu 3":
+      st.subheader("Menu 3")
       st.write("")
-
-      st.markdown("""
-      ### Itinerary Web App made with Streamlit
-
-      for info:
-      - [streamlit](https://streamlit.io)
-      """)
 
   if choice == "About":
     st.subheader("About")
