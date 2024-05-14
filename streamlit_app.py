@@ -36,7 +36,7 @@ def main():
   choice = st.sidebar.selectbox("Menu", activity)
 
   if choice == "Menu 1":
-      st.subheader("Menu 1")
+      st.subheader("Menu 1 TEST")
       st.write("")
 
 
