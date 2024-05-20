@@ -62,8 +62,14 @@ def main():
       for row in rows:
           id_datatourisme, types = row
 
+          st.write("//////////////////////////////////////////////////////////")
+          st.write("id_datatourisme: ", id_datatourisme)
+          st.write("types: ", types)
+
           # Séparation des types par des virgules
           types_list = [t.strip() for t in types.split(',')]
+
+          st.write("types_list: ", types_list)
 
           # Vérification pour chaque type
           for t in types_list:
@@ -85,6 +91,8 @@ def main():
                   # cur.execute(
                   #    "INSERT INTO liaison_datatourisme_types_de_poi (id_datatourisme, id_type_de_poi) VALUES (%s, %s)",
                   #    (id_datatourisme, id_type_de_poi))
+
+          st.write("//////////////////////////////////////////////////////////")
 
       # Commit des modifications et fermeture de la connexion
       conn.commit()
