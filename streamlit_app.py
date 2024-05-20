@@ -44,11 +44,11 @@ def main():
 
       # Paramètres de la base de données
       db_params = {
-          'host': '188.166.105.53',
-          'port': 65001,
-          'database': 'postgres',
-          'user': 'postgres',
-          'password': 'LearnPostgreSQL'
+          'host': st.secrets["DB_HOST"],
+          'port': st.secrets["DB_PORT"],
+          'database': st.secrets["DB_NAME"],
+          'user': st.secrets["DB_USER"],
+          'password': st.secrets["DB_PWD"]
       }
 
       # Connexion à la base de données
