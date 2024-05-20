@@ -3,5 +3,6 @@ pandas
 streamlit
 wikipedia
 st_combobox
-psycopg2
+psycopg2-binary
+
 
