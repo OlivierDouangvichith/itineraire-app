@@ -39,6 +39,9 @@ def main():
       st.subheader("Menu 1 TEST")
       st.write("")
 
+      main_activity = ["CulturalSite", "ParkAndGarden", "PlaceOfInterest", "PointOfInterest"]
+      main_choice = st.selectbox("Category", main_activity)
+
       # Paramètres de la base de données
       db_params = {
           'host': '188.166.105.53',
@@ -93,6 +96,10 @@ def main():
                   #    (id_datatourisme, id_type_de_poi))
 
           st.write("//////////////////////////////////////////////////////////")
+
+
+
+
 
       # Commit des modifications et fermeture de la connexion
       conn.commit()
