@@ -46,7 +46,7 @@ def main():
       arrivee_lieu = ["Paris", "Lyon", "Toulouse", "Marseille"]
       arrivee_choice = st.selectbox("Arrivée", arrivee_lieu)
 
-      today = datetime.datetime.now()
+      today = datetime.now()
       tomorrow = today + timedelta(days=1) # datetime.date(today.year, today.month, today+1)
       st.write("tomorrow: ", tomorrow)
       arrivee_date = st.date_input("Date Arrivée", value=None, min_value=tomorrow, format="DD/MM/YYYY")
