@@ -46,7 +46,7 @@ def main():
       arrivee_lieu = ["Paris", "Lyon", "Toulouse", "Marseille"]
       arrivee_choice = st.selectbox("Arrivée", arrivee_lieu)
 
-      arrivee_date = st.date_input("Date Arrivée", value=None)
+      arrivee_date = st.date_input("Date Arrivée", value=None, format="DD MM YYYY")
 
       duree_jour = st.number_input("Durée de visite", min_value=1, max_value=None, value="min", placeholder="En jour...")
 
