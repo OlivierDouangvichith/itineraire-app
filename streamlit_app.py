@@ -2,6 +2,7 @@
 import streamlit as st
 st.set_page_config(page_title="Itinerary Web App", page_icon="👍", layout="centered", initial_sidebar_state="auto")
 
+import datetime
 import altair as alt
 import numpy as np
 import pandas as pd
@@ -36,11 +37,18 @@ def main():
   choice = st.sidebar.selectbox("Menu", activity)
 
   if choice == "Planification de Voyage":
-      st.subheader("Planification de Voyage ////////////////////TEST")
+      st.subheader("Configurateur de votre prochain de Voyage")
       st.write("")
 
-      main_activity = ["CulturalSite", "ParkAndGarden", "PlaceOfInterest", "PointOfInterest"]
-      main_choice = st.selectbox("Category", main_activity)
+      depart_lieu = ["CulturalSite", "ParkAndGarden", "PlaceOfInterest", "PointOfInterest"]
+      depart_choice = st.selectbox("Départ", depart_lieu)
+
+      arrivee_lieu = ["CulturalSite", "ParkAndGarden", "PlaceOfInterest", "PointOfInterest"]
+      arrivee_choice = st.selectbox("Arrivée", arrivee_lieu)
+
+      arrivee_date = st.date_input("Date Arrivée", value=None)
+
+
 
       # Paramètres de la base de données
       db_params = {
