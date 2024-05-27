@@ -40,10 +40,10 @@ def main():
       st.subheader("Configurateur de votre prochain de Voyage")
       st.write("")
 
-      depart_lieu = ["CulturalSite", "ParkAndGarden", "PlaceOfInterest", "PointOfInterest"]
+      depart_lieu = ["Paris", "Lyon", "Toulouse", "Marseille"]
       depart_choice = st.selectbox("Départ", depart_lieu)
 
-      arrivee_lieu = ["CulturalSite", "ParkAndGarden", "PlaceOfInterest", "PointOfInterest"]
+      arrivee_lieu = ["Paris", "Lyon", "Toulouse", "Marseille"]
       arrivee_choice = st.selectbox("Arrivée", arrivee_lieu)
 
       arrivee_date = st.date_input("Date Arrivée", value=None)
