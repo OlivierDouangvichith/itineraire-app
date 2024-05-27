@@ -2,7 +2,7 @@
 import streamlit as st
 st.set_page_config(page_title="Itinerary Web App", page_icon="👍", layout="centered", initial_sidebar_state="auto")
 
-import datetime
+import datetime import datetime, timedelta
 import altair as alt
 import numpy as np
 import pandas as pd
@@ -47,7 +47,7 @@ def main():
       arrivee_choice = st.selectbox("Arrivée", arrivee_lieu)
 
       today = datetime.datetime.now()
-      tomorrow = datetime.date(today.year, today.month, 1)
+      tomorrow = today + timedelta(days=1) # datetime.date(today.year, today.month, today+1)
       st.write("tomorrow: ", tomorrow)
       arrivee_date = st.date_input("Date Arrivée", value=None, min_value=tomorrow, format="DD/MM/YYYY")
 
