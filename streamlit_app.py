@@ -32,11 +32,11 @@ def main():
   st.markdown(subheader_template, unsafe_allow_html=True)
   st.sidebar.image("france_tourisme.jpg", use_column_width=True)
 
-  activity = ["Menu 1", "Menu 2", "Menu 3", "About"]
+  activity = ["Planification de Voyage", "Méthodologie", "Analyse des données", "A propos"]
   choice = st.sidebar.selectbox("Menu", activity)
 
-  if choice == "Menu 1":
-      st.subheader("Menu 1 TEST")
+  if choice == "Planification de Voyage":
+      st.subheader("Planification de Voyage ////////////////////TEST")
       st.write("")
 
       main_activity = ["CulturalSite", "ParkAndGarden", "PlaceOfInterest", "PointOfInterest"]
@@ -105,16 +105,16 @@ def main():
       conn.commit()
       conn.close()
 
-  if choice == "Menu 2":
-      st.subheader("Menu 2")
+  if choice == "Méthodologie":
+      st.subheader("Menu Méthodologie")
       st.write("")
 
-  if choice == "Menu 3":
-      st.subheader("Menu 3")
+  if choice == "Analyse des données":
+      st.subheader("Analyse des données 3")
       st.write("")
 
-  if choice == "About":
-    st.subheader("About")
+  if choice == "A propos":
+    st.subheader("A propos")
     st.write("")
 
     st.markdown("""
