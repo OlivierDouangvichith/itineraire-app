@@ -48,7 +48,7 @@ def main():
 
       arrivee_date = st.date_input("Date Arrivée", value=None)
 
-      duree_jour = st.number_input("Durée de visite", value="int", placeholder="En jour...")
+      duree_jour = st.number_input("Durée de visite", value=None, placeholder="En jour...")
 
 
       # Paramètres de la base de données
