@@ -48,6 +48,7 @@ def main():
 
       today = datetime.datetime.now()
       tomorrow = datetime.date(today.year, today.month, 1)
+      st.write("tomorrow: ", tomorrow)
       arrivee_date = st.date_input("Date Arrivée", value=None, min_value=tomorrow, format="DD/MM/YYYY")
 
       duree_jour = st.number_input("Durée de visite", min_value=1, max_value=None, value="min", placeholder="En jour...")
