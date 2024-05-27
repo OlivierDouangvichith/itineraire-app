@@ -2,7 +2,7 @@
 import streamlit as st
 st.set_page_config(page_title="Itinerary Web App", page_icon="👍", layout="centered", initial_sidebar_state="auto")
 
-import datetime import datetime, timedelta
+from datetime import datetime, timedelta
 import altair as alt
 import numpy as np
 import pandas as pd
